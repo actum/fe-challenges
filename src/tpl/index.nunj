@@ -1,0 +1,12 @@
+{% extends "layouts/default.nunj" %}
+
+{% set title = "🚀 FE Challenges" %}
+
+{% block content %}
+    <h1>Pages</h1>
+    <ul>
+        {% for path in _pages %}
+            <li><a href="{{ path }}.html">{{ path }}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}
