@@ -10,6 +10,8 @@
     "node": "8.11.1"
   },
   "scripts": {
+    "heroku-postbuild": "node node_modules/.bin/gulp build",
+    "start": "node node_modules/.bin/http-server ./dist",
     "lint": "gulp eslint stylelint",
     "prepush-msg": "echo 'Running lint task...' && exit 0"
   },

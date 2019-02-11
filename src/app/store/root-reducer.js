@@ -2,10 +2,7 @@
 import { combineReducers } from 'redux';
 
 // Parent directory modules
-import counter from '../components/plus-one/reducer';
 
-const rootReducer = combineReducers({
-  counter,
-});
+const rootReducer = combineReducers({});
 
 export default rootReducer;
